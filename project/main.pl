@@ -23,7 +23,7 @@ cidade("Cachoeira Seca").
 cidade("Caruaru").
 cidade("Toritama").
 cidade("Santa cruz do Capibaribe").
-cidadE("Jataúba").
+cidade("Jataúba").
 cidade("Bonito").
 cidade("Palmares").
 cidade("Praia de Tamandaré").
@@ -75,6 +75,7 @@ rota("Recife", "Olinda", 9.7, "Av. Dom Hélder").
 
 onibus("b0001", "Progresso").
 onibus("b0002", "Progresso").
+onibus("b0003", "Guanabara").
 
 
 % horarios
@@ -82,11 +83,12 @@ onibus("b0002", "Progresso").
 % Formato...
 % horarios("idViagem", "idOnibus" , hrSaida: minutos, Chegada: minutos).
 
-horarios("v0001","b0001", "6:00", "6:46").
-horarios("v0002","b0001", "10:00", "11:36").
-horarios("v0003","b0001", "13:00", "15:16").
-horario("v0005", "b0002", "6:50", "15:42").
-horario("v0006", "b0003", "7:00", "10:11").
+horario("v0001","b0001", "6:00", "6:46").
+horario("v0002","b0001", "10:00", "11:36").
+horario("v0003","b0002", "13:00", "15:16").
+horario("v0004","b0002", "13:00", "15:16").
+horario("v0005", "b0003", "6:50", "15:42").
+horario("v0006", "b0004", "7:00", "10:11").
 
 
 horario("av0001", "a0001", "10:00", "11:15").
@@ -105,35 +107,28 @@ viagem("Petrolina", "Recife", "v0005", 120.00).
 viagem("Arco Verde", "Recife", "v0006", 64.00).
 
 %voo para Lagoa grande para exemplo
-trajeto("Petrolina", "Recife", "av0001", 400.00).
+viagem("Petrolina", "Recife", "av0001", 400.00).
 
 
+%findall([Cidade, HorarioI, NomeTransp] ,(
+%      viagem(X,Cidade,IdViagem,_),
+%       horario(IdViagem,IdOnibus,HorarioI,_),
+%       onibus(IdOnibus, NomeTransp)),
+%        Viagens). 
 
 
-
-menu :-
-    nl,
-    write('>    MENU DE CONSULTAS LogTravels     .'), nl,
-    write('>   1. listar todas as Cidades'), nl,
-    write('>   2. procurar viajens a sua Cidade'), nl,
-    write('>   3. detalhes sobre uma viagem'), nl,
-  	write('>   4. melhor preço para viagem'), nl,
-    write('>   0. Sair'), nl, nl,
-    read(Choice),
-    run_opt(Choice), menu.
-
-
-run_opt(1) :- listing(cidade).
-% lista todas as cidades.
-
-run_opt(2) :- .
-% query para uma cidade e listar as viagens pra ela.
-
-run_opt(3) :- .
-% detalhes a partir de um id de viagem.
-
-
-
-run_opt(_) :- write('Opcão invalida'), write(_), nl.
-
-run_opt(0) :- write('Obrigado'), nl, halt.
+%Tentei melhorar mas.....
+%o read City está recebendo o valor na chamada da função viagem em vez de verificar se é igual
+suaCidade:- nl,
+    write("Digite o nome da sua cidade:"), nl,
+    read(City),
+  	forall(
+        (
+        	viagem(City,Cidade,IdViagem,_),
+       		horario(IdViagem,IdOnibus,HorarioI,_),
+       		onibus(IdOnibus, NomeTransp)
+        )
+        ,  format('~w~w~n~w~w hrs~n~w~w~n__________________ ~w ~n',
+                  ['Destino: ', Cidade,
+                    'Saida: ', HorarioI,
+                    'Empresa: ', NomeTransp, City])).
