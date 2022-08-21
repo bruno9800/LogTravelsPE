@@ -1,0 +1,7 @@
+
+
+findall([Cidade, HorarioI, NomeTransp] ,(
+      viagem(X,Cidade,IdViagem,_),
+       horario(IdViagem,IdOnibus,HorarioI,_),
+       onibus(IdOnibus, NomeTransp)),
+        Viagens). 

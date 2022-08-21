@@ -110,11 +110,7 @@ viagem("Arco Verde", "Recife", "v0006", 64.00).
 viagem("Petrolina", "Recife", "av0001", 400.00).
 
 
-%findall([Cidade, HorarioI, NomeTransp] ,(
-%      viagem(X,Cidade,IdViagem,_),
-%       horario(IdViagem,IdOnibus,HorarioI,_),
-%       onibus(IdOnibus, NomeTransp)),
-%        Viagens). 
+
 
 
 %Tentei melhorar mas.....
