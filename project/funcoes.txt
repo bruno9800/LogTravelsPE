@@ -4,9 +4,16 @@ findall([Cidade, HorarioI, NomeTransp, Valor] ,(
        onibus(IdOnibus, NomeTransp)),
         Viagens). 
 
-
-findall([Cidade, HorarioI, NomeTransp] ,(
-      viagem(X,Cidade,IdViagem,_),
-       horario(IdViagem,IdOnibus,HorarioI,_),
-       onibus(IdOnibus, NomeTransp)),
-        Viagens). 
+suaCidade:- nl,
+    write("Digite o nome da sua cidade:"), nl,
+    read(City),
+  	forall(
+        (
+        	viagem(City,Cidade,IdViagem,_),
+       		horario(IdViagem,IdOnibus,HorarioI,_),
+       		onibus(IdOnibus, NomeTransp)
+        )
+        ,  format('~w~w~n~w~w hrs~n~w~w~n__________________ ~w ~n',
+                  ['Destino: ', Cidade,
+                    'Saida: ', HorarioI,
+                    'Empresa: ', NomeTransp, City])).
