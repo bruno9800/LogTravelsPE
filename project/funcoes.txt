@@ -5,3 +5,20 @@ findall([Cidade, HorarioI, NomeTransp] ,(
        horario(IdViagem,IdOnibus,HorarioI,_),
        onibus(IdOnibus, NomeTransp)),
         Viagens). 
+
+
+%Tentei melhorar mas.....
+%o read City está recebendo o valor na chamada da função viagem em vez de verificar se é igual
+suaCidade:- nl,
+    write("Digite o nome da sua cidade:"), nl,
+    read(City),
+  	forall(
+        (
+        	viagem(City,Cidade,IdViagem,_),
+       		horario(IdViagem,IdOnibus,HorarioI,_),
+       		onibus(IdOnibus, NomeTransp)
+        )
+        ,  format('~w~w~n~w~w hrs~n~w~w~n__________________ ~w ~n',
+                  ['Destino: ', Cidade,
+                    'Saida: ', HorarioI,
+                    'Empresa: ', NomeTransp, City])).
