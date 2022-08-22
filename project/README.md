@@ -1,6 +1,8 @@
  # Regras
 
   ## funções auxiliares
+
+ ```pl
 contem([X | _], X).
 contem([_ | V], X) :- contem(V, X).
 
@@ -18,6 +20,7 @@ menorTrajeto(A, B, M) :- findall(D, trajeto(A, B, [A], _, D), V), sort(V, [M|_])
 imprimeMenorTrajeto(A, B) :- 
     menorTrajeto(A, B, D),
     forall(trajeto(A, B, [A], T, D), imprimeTrajeto(T, D)).
+```
 
  ## Determina todas as rotas possiveis de A até B saindo depois das H horas
 
