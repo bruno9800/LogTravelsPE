@@ -48,8 +48,20 @@ cidade("Lagoas").
 
 
 rota("Petrolina", "Lagoa Grande", 53.2, "BR-122").
+rota("Petrolina", "Rajada", 78.5, "BR-405").
+rota("Rajada", "Dormentes", 49.9, "PE-630").
+rota("Rajada", "Afrânio", 41.5, "BR-407").
+rota("Afrânio", "Dormentes", 32.1, "Afranio Caboclo").
+rota("Dormentes", "Lagoas", 45.2, "PE-635").
+rota("Lagoas", "Santa Cruz", 32.7, "BR-122").
+rota("Santa Cruz", "Santa Filomena", 39.8, "BR-122").
+rota("Dormentes", "Santa Filomena", 38.3, "PE-630").
 rota("Lagoa Grande", "Santa Maria da Boa Vista", 55.4, "BR-428").
 rota("Lagoa Grande", "Petrolina", 53.2, "BR-122").
+rota("Lagoa Grande", "Lagoas", 76.4, "BR-122").
+rota("Lagoa Grande", "Parnamirim", 132.0, "PE-555").
+rota("Parnamirim", "Salgueiro", 51.8, "BR-232").
+rota("Parnamirim", "Ouricuri", 61.4, "BR-316").
 rota("Santa Maria da Boa Vista", "Lagoa Grande", 55.4, "BR-428").
 rota("Santa Maria da Boa Vista", "Orocó", 36.7, "BR-428").
 rota("Orocó", "Santa Maria da Boa Vista", 36.7, "BR-428").
