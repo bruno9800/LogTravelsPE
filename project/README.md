@@ -1,3 +1,6 @@
+ # Regras
+
+  ## funções auxiliares
 contem([X | _], X).
 contem([_ | V], X) :- contem(V, X).
 
