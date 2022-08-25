@@ -47,131 +47,116 @@ cidade("Santa Cruz").
 cidade("Lagoas").
 
 
-rota("Petrolina", "Lagoa Grande", 53.2, "BR-122").
-rota("Petrolina", "Rajada", 78.5, "BR-405").
-rota("Rajada", "Dormentes", 49.9, "PE-630").
-rota("Rajada", "Afrânio", 41.5, "BR-407").
-rota("Afrânio", "Dormentes", 32.1, "Afranio Caboclo").
-rota("Dormentes", "Lagoas", 45.2, "PE-635").
-rota("Lagoas", "Santa Cruz", 32.7, "BR-122").
-rota("Santa Cruz", "Santa Filomena", 39.8, "BR-122").
-rota("Dormentes", "Santa Filomena", 38.3, "PE-630").
-rota("Lagoa Grande", "Santa Maria da Boa Vista", 55.4, "BR-428").
-rota("Lagoa Grande", "Petrolina", 53.2, "BR-122").
-rota("Lagoa Grande", "Lagoas", 76.4, "BR-122").
-rota("Lagoa Grande", "Parnamirim", 132.0, "PE-555").
-rota("Parnamirim", "Salgueiro", 51.8, "BR-232").
-rota("Parnamirim", "Ouricuri", 61.4, "BR-316").
-rota("Santa Maria da Boa Vista", "Lagoa Grande", 55.4, "BR-428").
-rota("Santa Maria da Boa Vista", "Orocó", 36.7, "BR-428").
-rota("Orocó", "Santa Maria da Boa Vista", 36.7, "BR-428").
-rota("Orocó", "Cabrobó", 38.7, "BR-428").
-rota("Cabrobó", "Orocó", 38.7, "BR-428").
-rota("Cabrobó", "Belém de São Francisco", 50.3, "BR-316"). 
-rota("Belém de São Francisco", "Cabrobó", 50.3, "BR-316").
-rota("Belém de São Francisco", "Floresta", 46.1, "BR-316").
-rota("Floresta", "Belém de São Francisco", 46.1, "BR-316").
-rota("Floresta", "Ibimirim", 102.0, "PE-360").
-rota("Floresta", "Petrolândia", 65.7, "BR-316").
-rota("Petrolândia ", "Floresta", 65.7, "BR-316").
-rota("Petrolândia ", "Ibimirim", 76.7, "BR-110").
-rota("Ibimirim", "Petrolândia", 76.7, "BR-110").
-rota("Ibimirim", "Floresta", 102.0, "PE-360").
-rota("Ibimirim", "Cruzeiro do Nordeste", 53.0, "BR-110").
-rota("Cruzeiro do Nordeste", "Ibimirim", 53.0, "BR-110").
-rota("Cruzeiro do Nordeste", "Arco Verde", 25.9, "BR-232").
-rota("Arco Verde", "Cruzeiro do Nordeste", 25.9, "BR-232").
-rota("Arco Verde", "Pesqueira", 42.5, "BR-232").
-rota("Pesqueira", "Arco verde", 42.5, "BR-232").
-rota("Pesqueira", "Sanharó", 16.4, "BR-232").
-rota("Sanharó", "Pesqueira", 16.4, "BR-232").
-rota("Sanharó", "Belo Jardim", 20.5, "BR-232").
-rota("Belo Jardim", "Sanharó", 20.5, "BR-232").
-rota("Belo Jardim", "Tacaimbó", 20.1, "BR-232").
-rota("Belo Jardim", "São Caitano", 33.6, "BR-232").
-rota("São Caitano", "Tacaimbó", 18.9, "BR-232").
-rota("São Caitano", "Caruaru", 20.5, "BR-232").
-rota("São Caitano", "Belo Jardim", 33.6, "BR-232").
-rota("Tacaimbó", "São Caitano", 18.9, "BR-232").
-rota("Tacaimbó", "Belo Jardim", 20.1, "BR-232").
-rota("Tacaimbó", "Fazenda Nova", 23.1, "PE-144").
-rota("Fazenda Nova", "Tacaimbó", 23.1, "PE-144").
-rota("Fazenda Nova", "Jataúba", 45.7, "PE-145").
-rota("Fazenda Nova", "Cachoeira Seca", 24.1, "PE-145").
-rota("Cachoeira Seca", "Fazenda Nova", 24.1, "PE-145").
-rota("Cachoeira Seca", "Toritama", 14.7, "PE-104").
-rota("Cachoeira Seca", "Caruaru", 23.5, "PE-104").
-rota("Caruaru", "Cachoeira Seca", 23.5, "PE-104").
-rota("Caruaru", "São Caitano", 20.5, "BR-232").
-rota("Caruaru", "Bezerros", 32.7, "BR-232").
-rota("Bezerros", "Caruaru", 32.7, "BR-232").
-rota("Bezerros", "Gravatá", 21.7, "BR-232").
-rota("Bezerros", "Bonito", 31.6, "PE-103").
-rota("Bonito", "Bezerros", 31.6, "PE-103").
-rota("Bonito", "Palmares", 43.9, "PE-103").
-rota("Toritama", "Cachoeira Seca", 13.8, "PE-104").
-rota("Toritama", "Santa cruz do Capibaribe", 20.1, "BR-104").
-rota("Santa cruz do Capibaribe", "Toritama", 20.1, "BR-104").
-rota("Santa cruz do Capibaribe", "Jataúba", 36.7, "PE-160").
-rota("Jataúba", "Santa cruz do Capibaribe", 36.7, "PE-160").
-rota("Jataúba", "Fazenda Nova", 45.7, "PE-145").
-rota("Pombos", "Vitoria de Santo Antão", 14.5, "BR-232").
-rota("Pombos", "Gravatá", 23.2, "BR-232").
-rota("Gravatá", "Pombos", 23.2, "BR-232").
-rota("Gravatá", "Bezerros", 21.7, "BR-232").
-rota("Moreno", "Recife", 30, "PE-007").
-rota("Moreno", "Jaboatão dos Guararapes", 26.8, "PE-007").
-rota("Moreno", " Vitoria de Santo Antão ", 23.5, "BR-232").
-rota("Palmares", "Bonito", 43.9, "PE-103").
-rota("Palmares", "Praia de Tamandaré", 68.3, "PE-096").
-rota("Praia de Tamandaré", "Palmares", 68.3, "PE-096").
-rota("Praia de Tamandaré", "Sirinhaém", 31, "PE-096").
-rota("Sirinhaém", "Praia de Tamandaré", 31, "PE-096").
-rota("Sirinhaém", "Porto de Galinhas", 28.7, "PE-60").
-rota("Sirinhaém", "Ipojuca", 27.6, "PE-60").
-rota("Porto de Galinhas", "Sirinhaém", 28.7, "PE-60").
-rota("Porto de Galinhas", "Ipojuca", 22.6, "PE-038").
-rota("Ipojuca", "Porto de Galinhas", 22.6, "PE-038").
-rota("Ipojuca", "Sirinhaém", 27.6, "PE-60").
-rota("Ipojuca", "Cabo de Santo Agostinho", 18.4, "PE-60").
-rota("Cabo de Santo Agostinho", "Ipojuca", 18.4, "PE-60").
-rota("Cabo de Santo Agostinho", "Jaboatão dos Guararapes", 21.2, "BR-101").
-rota("Jaboatão dos Guararapes", "Cabo de Santo Agostinho", 21.2, "BR-101").
-rota("Jaboatão dos Guararapes", "Moreno", 26.8, "PE-007").
-rota("Jaboatão dos Guararapes", "Recife", 15, "PE-008").
-rota("Recife", "Jaboatão dos Guararapes", 15, "PE-008").
-rota("Recife", "Olinda", 10, "Av. Cruz Cabugá").
-rota("Recife", "Moreno", 30, "PE-007").
-rota("Recife", "Igarassu", 26.7, "BR-101").
-rota("Igarassu", "Recife", 26.7, "BR-101").
-rota("Igarassu", "Ilha de Itamaracá", 20.1, "PE-035").
-rota("Igarassu", "Olinda", 23.9, "BR-101").
-rota("Olinda", "Igarassu", 23.9, "BR-101").
-rota("Olinda", "Recife", 10, "Av. Cruz Cabugá").
-rota("Vitoria de Santo Antão", "Moreno", 23.5, "BR-232").
-rota("Vitoria de Santo Antão", "Pombos", 14.5, "BR-232").
-rota("Ilha de Itamaracá", "Igarassu", 20.1, "PE-035"). 
+pista("Petrolina", "Lagoa Grande", 53.2, "BR-122").
+pista("Petrolina", "Rajada", 78.5, "BR-405").
+pista("Rajada", "Dormentes", 49.9, "PE-630").
+pista("Rajada", "Afrânio", 41.5, "BR-407").
+pista("Afrânio", "Dormentes", 32.1, "Afranio Caboclo").
+pista("Dormentes", "Lagoas", 45.2, "PE-635").
+pista("Lagoas", "Santa Cruz", 32.7, "BR-122").
+pista("Santa Cruz", "Santa Filomena", 39.8, "BR-122").
+pista("Dormentes", "Santa Filomena", 38.3, "PE-630").
+pista("Lagoa Grande", "Santa Maria da Boa Vista", 55.4, "BR-428").
+pista("Santa Maria da Boa Vista", "Orocó", 36.7, "BR-428").
+pista("Orocó", "Cabrobó", 38.7, "BR-428").
+pista("Cabrobó", "Belém de São Francisco", 50.3, "BR-316").
+pista("Belém de São Francisco", "Floresta", 46.1, "BR-316").
+pista("Floresta", "Ibimirim", 102.0, "PE-360").
+pista("Floresta", "Petrolândia", 65.7, "BR-316").
+pista("Petrolândia", "Ibimirim", 76.7, "BR-110").
+pista("Ibimirim", "Cruzeiro do Nordeste", 53.0, "BR-110").
+pista("Cruzeiro do Nordeste", "Arco Verde", 25.9, "BR-232").
+pista("Arco Verde", "Pesqueira", 42.5, "BR-232").
+pista("Pesqueira", "Sanharó", 16.4, "BR-232").
+pista("Sanharó", "Belo Jardim", 20.5, "BR-232").
+pista("Belo Jardim", "Tacaimbó", 20.1, "BR-232").
+pista("Belo Jardim", "São Caitano", 33.6, "BR-232").
+pista("São Caitano", "Tacaimbó", 18.9, "BR-232").
+pista("São Caitano", "Caruaru", 20.5, "BR-232").
+pista("Tacaimbó", "Fazenda Nova", 23.1, "PE-144").
+pista("Fazenda Nova", "Jataúba", 45.7, "PE-145").
+pista("Fazenda Nova", "Cachoeira Seca", 24.1, "PE-145").
+pista("Cachoeira Seca", "Toritama", 14.7, "PE-104").
+pista("Cachoeira Seca", "Caruaru", 23.5, "PE-104").
+pista("Caruaru", "Bezerros", 32.7, "BR-232").
+pista("Bezerros", "Gravatá", 21.7, "BR-232").
+pista("Bezerros", "Bonito", 31.6, "PE-103").
+pista("Bonito", "Palmares", 43.9, "PE-103").
+pista("Toritama", "Santa Cruz do Capibaribe", 20.1, "BR-104").
+pista("Santa Cruz do Capibaribe", "Jataúba", 36.7, "PE-160").
+pista("Pombos", "Vitoria de Santo Antão", 14.5, "BR-232").
+pista("Pombos", "Gravatá", 23.2, "BR-232").
+pista("Moreno", "Recife", 30, "PE-007").
+pista("Moreno", "Jaboatão dos Guararapes", 26.8, "PE-007").
+pista("Moreno", "Vitoria de Santo Antão", 23.5, "BR-232").
+pista("Palmares", "Praia de Tamandaré", 68.3, "PE-096").
+pista("Praia de Tamandaré", "Sirinhaém", 31, "PE-096").
+pista("Sirinhaém", "Porto de Galinhas", 28.7, "PE-60").
+pista("Sirinhaém", "Ipojuca", 27.6, "PE-60").
+pista("Porto de Galinhas", "Ipojuca", 22.6, "PE-038").
+pista("Ipojuca", "Cabo de Santo Agostinho", 18.4, "PE-60").
+pista("Cabo de Santo Agostinho", "Jaboatão dos Guararapes", 21.2, "BR-101").
+pista("Jaboatão dos Guararapes", "Recife", 15, "PE-008").
+pista("Recife", "Olinda", 10, "Av. Cruz Cabugá").
+pista("Recife", "Igarassu", 26.7, "BR-101").
+pista("Igarassu", "Ilha de Itamaracá", 20.1, "PE-035").
+pista("Igarassu", "Olinda", 23.9, "BR-101").
+
+rota(A, B, D, R) :- pista(A, B, D, R).
+rota(A, B, D, R) :- pista(B, A, D, R).
 
 onibus("b0001", "Progresso").
-onibus("b0002", "Progresso").
-onibus("b0003", "Guanabara").
+onibus("b0002", "viação Progresso").
+onibus("b0003", "Cruzeiro").
 onibus("b0004", "Progresso").
+onibus("b0005", "Pernambucana").
+onibus("b0006", "Cruzeiro").
+onibus("b0007", "Pernambucana").
+onibus("b0008", "Pernambucana").
+onibus("b0009", "Progresso").
+onibus("b0010", "viação Progresso").
+onibus("b0011", "viação Progresso").
+onibus("b0012", "Progresso").
+onibus("b0013", "Pernambucana").
+onibus("b0014", "Cruzeiro").
+onibus("b0015", "Cruzeiro").
+onibus("b0016", "Progresso").
+onibus("b0017", "viação Progresso").
+onibus("b0018", "Progresso").
 
-horario("v0001","b0001", 6 * 60 , 6 * 60 + 46).
-horario("v0002","b0001", 600, 696).
-horario("v0003","b0002", 780, 916).
-horario("v0004","b0002", 780, 916).
-horario("v0005", "b0003", 410, 945).
+horario("v0001", "b0001", 6 * 60 , 6 * 60 + 46).
+horario("v0001", "b0009", 720, 764).
+horario("v0002", "b0001", 600, 696).
+horario("v0003", "b0002", 780, 916).
+horario("v0004", "b0002", 780, 916).
+horario("v0005", "b0003", 350, 1300).
 horario("v0006", "b0004", 420, 611).
-horario("v0007", "b0001", 420, 1000).
-horario("v0008", "b0002", 930, 1000).
+horario("v0007", "b0001", 420, 1350).
+horario("v0007", "b0010", 210, 1240).
+horario("v0008", "b0002", 930, 1400).
+horario("v0009", "b0005", 630, 801).
+horario("v0009", "b0015", 1000, 1171).
+horario("v0010", "b0006", 831, 901).
+horario("v0011", "b0007", 600, 729).
+horario("v0012", "b0008", 600, 728).
+horario("v0013", "b0008", 750, 814).
+horario("v0014", "b0009", 800, 945).
+horario("v0015", "b0011", 1200, 1285).
+horario("v0015", "b0012", 400, 496).
+horario("v0015", "b0013", 700, 796).
+horario("v0016", "b0014", 700, 796).
+horario("v0016", "b0016", 800,877).
+horario("v0017", "b0017", 800, 1000).
+horario("v0017", "b0018", 900, 1100).
+
 
 viagem("Lagoa Grande", " Cabrobó", "v0002", 35.00).
 viagem("Petrolina", "Lagoa Grande", "v0001", 5.00).
+viagem("Lagoa Grande", "Cabrobó", "v0014", 15.00).
 viagem("Lagoa Grande", "Recife", "v0007", 100.00).
 viagem("Petrolina", "Arco Verde", "v0004", 67.00).
 viagem("Petrolina", "Recife", "v0005", 114.00).
-viagem("Petrolina", "Cabrobó", "v0007", 45.00).
+viagem("Petrolina", "Cabrobó", "v0014", 45.00).
 viagem("Cabrobó", "Petrolina", "v0003", 50.50).
 viagem("Recife", "Petrolina", "v0008", 120.00).
 viagem("Recife", "Caruaru", "v0009", 77.00).
@@ -179,3 +164,123 @@ viagem("Recife", "Gravata", "v0010", 63.00).
 viagem("Gravata", "Recife", "v0011", 65.00).
 viagem("Arco Verde", "Recife", "v0006", 64.00).
 viagem("Arco Verde", "Recife", "v0008", 64.00).
+viagem("Arco Verde", "Pombos", "v0009", 35.00).
+viagem("Pombos", "Recife", "v0010", 39.99).
+viagem("Petrolina", "Santa Cruz", "v0011", 60.0).
+viagem("Petrolina", "Dormentes", "v0012", 45.0).
+viagem("Dormentes", "Santa Cruz", "v0013", 23.0).
+viagem("Gravatá", "Tacaimbó", "v0015", 50.0).
+viagem("Toritama", "Bonito", "v0016", 55.00).
+viagem("Bezerros", "Praia de Tamandaré","v0017", 88.0).
+
+
+ % Funcões Auxiliares
+
+contem([X | _], X).
+contem([_ | V], X) :- contem(V, X).
+
+trajeto(A, B, _, T, D) :- rota(A, B, D, R), T = [A, R, D, B].
+trajeto(A, B, U, T, D) :- rota(A, C, D1, R), C \= B, not(contem(U, C)), trajeto(C, B, [C | U], T1, D2), T = [A, R, D1 | T1], D is D1 + D2.
+ 
+imprimeTrajeto(T, D) :-
+    format("____________________________________ ~nDistancia Total: ~w~nRota: ", [D]),
+    writeln(T).
+
+imprimeTrajetos(A, B) :- forall(trajeto(A, B, [A], T, D), imprimeTrajeto(T, D)).
+
+menorTrajeto(A, B, M) :- findall(D, trajeto(A, B, [A], _, D), V), sort(V, [M|_]).
+
+imprimeMenorTrajeto(A, B) :- 
+    menorTrajeto(A, B, D),
+    forall(trajeto(A, B, [A], T, D), imprimeTrajeto(T, D)).
+
+
+ % Determina todas as rotas possiveis de A até B saindo depois das H horas
+
+todasRotas(A, B, H, R, PT, HS, HC) :- viagem(A, B, I, PT), horario(I, _, HS, HC), H =< HS, R = [A, I, B].
+todasRotas(A, B, H, R, PT, HS, HC) :- viagem(A, C, I, P1), horario(I, _, HS, HC1), H =< HS, todasRotas(C, B, HC1, R2, P2, _, HC), PT is P1 + P2, R = [A, I | R2].
+
+imprimeRota(HorarioS, HorarioC, Preco, Rota) :- 
+    HS is HorarioS // 60,
+   	MS is mod(HorarioS ,60),
+    HC is HorarioC // 60,
+    MC is mod(HorarioC ,60),
+	format('____________________________________ ~n~w~w:~w hrs~n~w~w:~w hrs~n~w~w~nRota: ',[
+		'Saida: ', HS,MS, 
+        'Chegada: ', HC,MC,
+        'Preço: R$ ', Preco
+    ]),
+    writeln(Rota).
+
+imprimeRotas(A, B, H, M) :-
+    T is H * 60 + M,
+    forall(
+    	todasRotas(A, B, T, R, PT, HorarioS, HorarioC),
+    	imprimeRota(HorarioS, HorarioC, PT, R)
+    ).
+
+ % Determina o menor tempo de chegada em B saindo de A depois das H horas
+
+menorTempo(A, B, H, C) :- findall(HC, todasRotas(A, B, H, _, _, _, HC), V), sort(V, [C|_]).
+
+imprimeMenorTempo(A, B, H, M) :-
+   T is H * 60 + M,
+   menorTempo(A, B, T, C),
+   forall(
+   	todasRotas(A, B, T, R, PT, HorarioS, C),
+   	imprimeRota(HorarioS, C, PT, R)
+   ).
+
+ % Determina o menor preço para uma viagem de A até B saindo depois das H horas.
+
+
+menorPreco(A, B, H, P) :- findall(PT, todasRotas(A, B, H, _, PT, _, _), V), sort(V, [P|_]).
+
+imprimeMenorPreco(A, B, H, M) :-
+   T is H * 60 + M,
+   menorPreco(A, B, T, P),
+   forall(
+   	todasRotas(A, B, T, R, P, HorarioS, HorarioC),
+   	imprimeRota(HorarioS, HorarioC, P, R)
+   ).
+
+ % Consulta em relação a cidade e empresa
+suaCidade(City):- nl,
+ 	forall(
+       (
+       	viagem(City,Cidade,IdViagem,Preco),
+      		horario(IdViagem,IdOnibus,HorarioS,HorarioC),
+      		onibus(IdOnibus, NomeTransp),
+          	HS is HorarioS // 60,
+       	MS is mod(HorarioS ,60),
+          	HC is HorarioC // 60,
+       	MC is mod(HorarioC ,60)
+       )
+       ,  format('~w~w~n~w~w:~w hrs~n~w~w:~w hrs~n~w~w~n~w~w~n____________________________________ ~n',
+                 ['Destino: ', Cidade,
+                  'Saida: ', HS,MS, 
+                  'Chegada: ', HC,MC,
+                  'Empresa: ', NomeTransp,
+                  'Preço: R$ ', Preco])).
+
+viagensEmpresa(Empresa):- nl,
+ 	forall(
+       (
+       	viagem(De,Para,IdViagem,Preco),
+      		horario(IdViagem,IdOnibus,HorarioS,HorarioC),
+      		onibus(IdOnibus, Empresa),
+          	HS is HorarioS // 60,
+       	MS is mod(HorarioS ,60),
+          	HC is HorarioC // 60,
+       	MC is mod(HorarioC ,60)
+       )
+       ,  (format('~w~w~n~w~w~n~w~w~n~w~w:~w hrs~n~w~w:~w hrs~n~w~w~n____________________________________ ~n',
+                 ['Onibus: ', IdOnibus,
+                  'De: ', De,
+                  'Para: ', Para,
+                  'Saida: ', HS,MS, 
+                  'Chegada: ', HC,MC,
+                  'Preço: R$ ', Preco]))).
+
+
+
