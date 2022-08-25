@@ -1,14 +1,14 @@
  # Regras
 
-  ## funções auxiliares
+ ## Funções auxiliares
 
- ```pl
+```pl
 contem([X | _], X).
 contem([_ | V], X) :- contem(V, X).
 
-trajeto(A, B, U, T, D) :- rota(A, B, D, R), T = [A, R, D, B].
+trajeto(A, B, _, T, D) :- rota(A, B, D, R), T = [A, R, D, B].
 trajeto(A, B, U, T, D) :- rota(A, C, D1, R), C \= B, not(contem(U, C)), trajeto(C, B, [C | U], T1, D2), T = [A, R, D1 | T1], D is D1 + D2.
-
+ 
 imprimeTrajeto(T, D) :-
     format("____________________________________ ~nDistancia Total: ~w~nRota: ", [D]),
     writeln(T).
@@ -24,7 +24,7 @@ imprimeMenorTrajeto(A, B) :-
 
  ## Determina todas as rotas possiveis de A até B saindo depois das H horas
 
- ```pl
+```pl
 todasRotas(A, B, H, R, PT, HS, HC) :- viagem(A, B, I, PT), horario(I, _, HS, HC), H =< HS, R = [A, I, B].
 todasRotas(A, B, H, R, PT, HS, HC) :- viagem(A, C, I, P1), horario(I, _, HS, HC1), H =< HS, todasRotas(C, B, HC1, R2, P2, _, HC), PT is P1 + P2, R = [A, I | R2].
 
@@ -60,11 +60,11 @@ imprimeMenorTempo(A, B, H, M) :-
     	todasRotas(A, B, T, R, PT, HorarioS, C),
     	imprimeRota(HorarioS, C, PT, R)
     ).
- ```
+```
 
  ## Determina o menor preço para uma viagem de A até B saindo depois das H horas.
-
-```pl
+ 
+ ```pl
 menorPreco(A, B, H, P) :- findall(PT, todasRotas(A, B, H, _, PT, _, _), V), sort(V, [P|_]).
 
 imprimeMenorPreco(A, B, H, M) :-
@@ -74,7 +74,11 @@ imprimeMenorPreco(A, B, H, M) :-
     	todasRotas(A, B, T, R, P, HorarioS, HorarioC),
     	imprimeRota(HorarioS, HorarioC, P, R)
     ).
+```
 
+ ## Consulta em relação a cidade e empresa
+
+ ```pl
 suaCidade(City):- nl,
   	forall(
         (
